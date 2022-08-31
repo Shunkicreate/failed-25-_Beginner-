@@ -1,0 +1,14 @@
+正規化、標準化
+logloss: 0.2071, accuracy: 0.9298
+
+drop pdays, balance, defauld
+logloss: 0.2052, accuracy: 0.9311
+
+drop pdays, balance, defauld, poutcome, id, job
+logloss: 0.2168, accuracy: 0.9259
+
+drop pdays, balance, default, id
+logloss: 0.2037, accuracy: 0.9312 =>best?
+
+drop pdays, balance, default, id, day
+logloss: 0.2061, accuracy: 0.9313
